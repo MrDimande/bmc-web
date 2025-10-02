@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMC Pro Services, Lda.</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- AOS (Animações) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+      }
+      /* Navbar */
+      .navbar {
+        background-color: #001f3f;
+        transition: all 0.3s ease-in-out;
+      }
+      .navbar.scrolled {
+        background: linear-gradient(90deg, #001f3f, #ffd700);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+      .navbar-brand {
+        font-weight: 700;
+        color: #ffd700 !important;
+      }
+      .nav-link {
+        color: white !important;
+        transition: color 0.3s;
+      }
+      .nav-link:hover {
+        color: #ffd700 !important;
+      }
+
+      /* Hero */
+      .hero {
+        background: linear-gradient(135deg, #001f3f, #ffd700);
+        color: white;
+        padding: 120px 20px;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+
+      /* Cards */
+      .card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Footer */
+      footer {
+        background: #001f3f;
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+      }
+      .social-icons a {
+        color: white;
+        font-size: 1.5rem;
+        margin: 0 10px;
+        transition: transform 0.3s, color 0.3s;
+      }
+      .social-icons a:hover {
+        transform: scale(1.2);
+        color: #ffd700;
+      }
+
+      /* Grupo BMC */
+      .grupo {
+        background: #f9f9f9;
+        padding: 60px 20px;
+        text-align: center;
+      }
+      .empresa {
+        background: white;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+      .empresa:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">BMC Pro Services</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#hero">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#grupo">Grupo BMC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfólio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="container" data-aos="fade-up">
+        <h1>Business Management Consultants Pro Services, Lda.</h1>
+        <p>Consultoria multidisciplinar com impacto positivo e sustentável</p>
+        <a href="#services" class="btn btn-light btn-lg mt-3"
+          >Conheça os nossos serviços</a
+        >
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container text-center" data-aos="fade-up">
+        <h2 class="fw-bold mb-4">Quem Somos</h2>
+        <p class="lead">
+          Fundada em 2023, a BMC Pro Services é um parceiro de confiança em
+          consultoria empresarial, gestão estratégica e desenvolvimento
+          organizacional.
+        </p>
+        <p>
+          <strong>Missão:</strong> Oferecer soluções inovadoras e sustentáveis
+          em gestão e consultoria.
+        </p>
+        <p>
+          <strong>Visão:</strong> Ser reconhecida como referência em consultoria
+          multidisciplinar em Moçambique e na região.
+        </p>
+        <p>
+          <strong>Valores:</strong> Ética | Inovação | Sustentabilidade |
+          Compromisso | Valorização das Pessoas
+        </p>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="services" class="py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4" data-aos="fade-up">Áreas de Actuação</h2>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="card p-4 h-100">
+              <i class="fas fa-chart-line fa-2x mb-3 text-primary"></i>
+              <h5 class="fw-bold">Consultoria Empresarial</h5>
+              <p>
+                Gestão estratégica, inovação organizacional e desenvolvimento
+                corporativo.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card p-4 h-100">
+              <i class="fas fa-leaf fa-2x mb-3 text-success"></i>
+              <h5 class="fw-bold">Consultoria Ambiental</h5>
+              <p>Estudos de impacto, sustentabilidade e soluções ecológicas.</p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card p-4 h-100">
+              <i class="fas fa-people-carry fa-2x mb-3 text-danger"></i>
+              <h5 class="fw-bold">Capital Humano</h5>
+              <p>
+                Formação profissional, desenvolvimento de liderança e team
+                building.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grupo BMC -->
+    <section id="grupo" class="grupo">
+      <div class="container">
+        <h2 data-aos="fade-up">O Nosso Grupo</h2>
+        <div class="row g-4">
+          <div class="col-md-3" data-aos="zoom-in">
+            <div class="empresa">
+              <h5 class="fw-bold">BrainyWrite</h5>
+              <p>Assessoria académica e apoio a estudantes e investigadores.</p>
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="empresa">
+              <h5 class="fw-bold">Peculiar Eventos</h5>
+              <p>
+                Organização de eventos exclusivos e experiências memoráveis.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="empresa">
+              <h5 class="fw-bold">Agencia Criativa 360º</h5>
+              <p>Agência criativa para design, marketing e branding.</p>
+            </div>
+          </div>
+          <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+            <div class="empresa">
+              <h5 class="fw-bold">Artes Luanica</h5>
+              <p>Construção, Arquitectura e Inovação.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio" class="py-5 bg-light">
+      <div class="container text-center" data-aos="fade-up">
+        <h2 class="fw-bold mb-4">Projetos & Experiência</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="projeto1.jpg" class="img-fluid rounded" />
+            </div>
+            <div class="swiper-slide">
+              <img src="projeto2.jpg" class="img-fluid rounded" />
+            </div>
+            <div class="swiper-slide">
+              <img src="projeto3.jpg" class="img-fluid rounded" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call-to-Action -->
+    <section
+      class="py-5 text-center"
+      style="background: #001f3f; color: #ffd700"
+      data-aos="zoom-in"
+    >
+      <div class="container">
+        <h2 class="fw-bold mb-3">
+          Pronto para transformar a sua ideia em sucesso?
+        </h2>
+        <a href="#contact" class="btn btn-light btn-lg">Fale Connosco</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="container">
+        <p class="mb-2">
+          © 2025 BMC Pro Services, Lda. | Todos os direitos reservados
+        </p>
+        <p>Email: geral@bmcpro.co.mz | Tel: (+258) 82 088 3478 / 87 850 9146</p>
+        <p>Avenida Julius Nyerere, 1023, Cidade de Maputo - Moçambique</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      // Navbar scroll
+      window.addEventListener('scroll', () => {
+        document
+          .querySelector('.navbar')
+          .classList.toggle('scrolled', window.scrollY > 50)
+      })
+
+      // Scroll suave
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault()
+          document
+            .querySelector(this.getAttribute('href'))
+            .scrollIntoView({ behavior: 'smooth' })
+        })
+      })
+
+      // Swiper init
+      var swiper = new Swiper('.mySwiper', {
+        loop: true,
+        pagination: { el: '.swiper-pagination' },
+        autoplay: { delay: 3000 },
+      })
+
+      // AOS init
+      AOS.init({ duration: 1000, once: true })
+    </script>
+  </body>
+</html>
